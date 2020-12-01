@@ -33,8 +33,7 @@ private open class Rectangle(
 }
 
 private class Square(side: Double) : Rectangle(side, side) {
-    constructor(side: Int) {
-    }
+    constructor(side: Int) : this(side.toDouble())
 }
 
 private class Triangle(
